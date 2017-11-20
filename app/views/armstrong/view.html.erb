@@ -1,0 +1,13 @@
+<h1>В последовательности от <%= @num %> до <%= @num1 %> найденно <%= @count %> чесел Армстронга</h1>
+<table border="1">
+  <tr>
+    <th>№</th>
+    <th>Число</th>
+  </tr>
+  <%- @res.each_with_index do |c, n| %>
+      <tr>
+        <td><%= n + 1 %></td>
+        <td><%= c %></td>
+      </tr>
+  <%- end %>
+</table>

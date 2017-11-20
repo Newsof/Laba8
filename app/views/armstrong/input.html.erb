@@ -1,0 +1,9 @@
+<div>
+  <%= form_tag('/view', :method => 'get') do %>
+      <%= label_tag('Введите начало последовательности') %>
+      <%= text_field_tag :a %><br>
+      <%= label_tag('Введите конец последовательности') %>
+      <%= text_field_tag :b %><br>
+      <%= submit_tag('Поиск') %>
+  <% end %>
+</div>

@@ -1,13 +1,14 @@
-<h1>В последовательности от <%= @num %> до <%= @num1 %> найденно <%= @count %> чисел Армстронга</h1>
-<table border="1">
+<p>В последовательности от <%= @num %> до <%= @num1 %> найденно <%= @count %> чисел Армстронга</p>
+<table id="result" border="1">
   <tr>
     <th>№</th>
     <th>Число</th>
   </tr>
-  <%- @res.each_with_index do |c, n| %>
+  <%- @result.each_with_index do |c, n| %>
       <tr>
         <td><%= n + 1 %></td>
         <td><%= c %></td>
       </tr>
   <%- end %>
 </table>
+<%= link_to 'Reload', root_path %>

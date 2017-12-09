@@ -1,0 +1,2 @@
+class ArmstrongResult < ApplicationRecord
+end
